@@ -28,10 +28,9 @@ async function Header() {
               className="absolute -inset-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-lg opacity-0 
                 group-hover:opacity-100 transition-all duration-500 blur-xl"
             />
- {/* bg-gradient-to-r from-blue-400 via-blue-300 to-purple-400 */}
             <div className="flex flex-col justify-center items-center">
-              <span className="block text-lg text-slate-300 font-pressStart text-transparent bg-clip-text">
-                AlgoShare
+              <span className="block text-lg text-white font-pressStart text-transparent bg-clip-text">
+                Algoshare
               </span>
               <span className="block  font-pressStart text-xs text-blue-400/60 font-medium">
                 Connect with your Peers
@@ -65,11 +64,11 @@ async function Header() {
                 <span className="font-semibold text-yellow-400">
                   Features
                 </span>{" "}
-                are {" "}
+                and  {" "}
                 <span className="font-semibold text-pink-400">
-                  Loading...
+                  Community 
                 </span>{" "}
-                Stay tuned 
+                is Loading...
               </p>
             </div>
           </div>
