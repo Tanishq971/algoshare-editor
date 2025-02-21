@@ -30,7 +30,7 @@ async function Header() {
             />
  {/* bg-gradient-to-r from-blue-400 via-blue-300 to-purple-400 */}
             <div className="flex flex-col justify-center items-center">
-              <span className="block text-lg text-white font-pressStart text-transparent bg-clip-text">
+              <span className="block text-lg text-slate-300 font-pressStart text-transparent bg-clip-text">
                 AlgoShare
               </span>
               <span className="block  font-pressStart text-xs text-blue-400/60 font-medium">
