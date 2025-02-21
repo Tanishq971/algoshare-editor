@@ -3,7 +3,7 @@ import { useCodeEditorStore } from "@/store/editorStore";
 import { useState, useRef, useEffect } from "react";
 import { THEMES } from "@/constants";
 import { AnimatePresence, motion } from "framer-motion";
-import { Palette, Theater } from "lucide-react";
+import { Palette } from "lucide-react";
 import { CircleOff, Cloud, Github, Laptop, Moon, Sun } from "lucide-react";
 
 const ThemeSelector = () => {

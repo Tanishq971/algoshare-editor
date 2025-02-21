@@ -3,13 +3,7 @@ import localFont from "next/font/local";
 import { Press_Start_2P } from "next/font/google";
 import Footer from "@/components/providers/Footer";
 import "./globals.css";
-import {
-  ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from "@clerk/nextjs";
+
 import ConvexClientProvider from "../../convex/components/providers/ConvexClientProvider";
 
 

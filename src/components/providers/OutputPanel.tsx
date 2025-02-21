@@ -1,10 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import { useCodeEditorStore } from "@/store/editorStore";
 import { Loader2 } from "lucide-react";
 export default function OutputPanel() {
-  const [input, setInput] = useState("");
   const {customInput , setCustomInput , runCode , error , output , isRunning} = useCodeEditorStore()
    
   function runCodeHandler(){

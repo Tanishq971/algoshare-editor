@@ -1,14 +1,12 @@
 "use client";
 import { useCodeEditorStore } from "@/store/editorStore";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Editor } from "@monaco-editor/react";
 import { LANGUAGE_CONFIG } from "@/constants";
-import Image from "next/image";
-import { TypeIcon } from "lucide-react";
 import { defineMonacoThemes } from "@/constants";
 
 function EditorPanel() {
-  const { language, theme, fontSize, editor, setFontSize, setEditor } = useCodeEditorStore();
+  const { language, theme, editor, setEditor } = useCodeEditorStore();
 
   useEffect(() => {
     const newCode =  LANGUAGE_CONFIG[language].defaultCode

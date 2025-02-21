@@ -5,7 +5,7 @@ import { useState, useRef, useEffect } from "react";
 import { LANGUAGE_CONFIG } from "@/constants";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDownIcon } from "lucide-react";
-const LanguageSelector = (hasAccess: any) => {
+const LanguageSelector = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { language, setLanguage } = useCodeEditorStore();
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -24,13 +24,6 @@ const LanguageSelector = (hasAccess: any) => {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
-
-  function handleLanguageSelect(lang:string){
-    setLanguage(lang);
-    setIsOpen(false);
-  }
-
-
 
   return (
     <div className="relative" ref={dropdownRef}>
