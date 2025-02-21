@@ -1,12 +1,15 @@
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+
 "use client";
 import { useCodeEditorStore } from "@/store/editorStore";
-import { useEffect, useState } from "react";
+import { Monaco } from "@monaco-editor/react";
+import { useEffect } from "react";
 import { Editor } from "@monaco-editor/react";
 import { LANGUAGE_CONFIG } from "@/constants";
 import { defineMonacoThemes } from "@/constants";
 
 function EditorPanel() {
-  const { language, theme, fontSize, editor, setFontSize, setEditor } = useCodeEditorStore();
+  const { language, theme, editor, setEditor } = useCodeEditorStore();
 
   useEffect(() => {
     const newCode =  LANGUAGE_CONFIG[language].defaultCode
@@ -32,7 +35,7 @@ function EditorPanel() {
             onChange={handleEditorChange}
             theme={theme}
             beforeMount={defineMonacoThemes}
-            onMount={(editor) => setEditor(editor as any)}
+            onMount={(editor) => setEditor(editor as Monaco)}
             options={{
               minimap: { enabled: false },
               fontSize:15,
