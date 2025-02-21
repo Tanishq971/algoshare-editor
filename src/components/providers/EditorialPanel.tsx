@@ -1,12 +1,12 @@
 "use client";
 import { useCodeEditorStore } from "@/store/editorStore";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Editor } from "@monaco-editor/react";
 import { LANGUAGE_CONFIG } from "@/constants";
 import { defineMonacoThemes } from "@/constants";
 
 function EditorPanel() {
-  const { language, theme, editor, setEditor } = useCodeEditorStore();
+  const { language, theme, fontSize, editor, setFontSize, setEditor } = useCodeEditorStore();
 
   useEffect(() => {
     const newCode =  LANGUAGE_CONFIG[language].defaultCode
@@ -32,7 +32,7 @@ function EditorPanel() {
             onChange={handleEditorChange}
             theme={theme}
             beforeMount={defineMonacoThemes}
-            onMount={(editor) => setEditor(editor)}
+            onMount={(editor) => setEditor(editor as any)}
             options={{
               minimap: { enabled: false },
               fontSize:15,

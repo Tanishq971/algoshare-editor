@@ -44,7 +44,7 @@ export interface CodeEditorState {
   error: string | null;
   theme: string;
   fontSize: number;
-  editor: Monaco | null;
+  editor: any | null;
   executionResult: ExecutionResult | null;
   customInput:string,
   setCustomInput:(input:string)=>void;
