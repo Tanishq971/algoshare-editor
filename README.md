@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Algoshare: Multi-Language Online Code Editor
+CodeCraft Logo
 
-## Getting Started
+🚀 About Algoshare
+CodeCraft is a powerful, user-friendly online code editor that supports multiple programming languages. Built with Next.js, Convex, and Clerk, CodeCraft offers a seamless coding experience with real-time collaboration features and customizable themes.
 
-First, run the development server:
 
-```bash
+✨ Features
+Multi-Language Support: Code in C++, Rust, Python, and more!
+
+Customizable Themes: Choose from a variety of themes to suit your coding style
+
+Real-time Collaboration: Work together with your team in real-time
+
+Secure Authentication: Powered by Clerk for safe and easy user management
+
+Responsive Design: Enjoy a seamless experience across all devices
+
+🛠️ Technologies Used
+Next.js
+
+TypeScript
+
+Convex
+
+Clerk
+
+🚀 Getting Started
+Prerequisites
+Node.js (v14 or later)
+
+npm or yarn
+
+Installation
+Clone the repository:
+
+text
+git clone https://github.com/yourusername/codecraft.git
+Navigate to the project directory:
+
+text
+cd codecraft
+Install dependencies:
+
+text
+npm install
+or
+
+text
+yarn install
+Set up environment variables:
+Create a .env.local file in the root directory and add the necessary environment variables.
+
+Run the development server:
+
+text
 npm run dev
-# or
+or
+
+text
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 in your browser to see the application.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📚 Documentation
+For more detailed information about using CodeCraft, please refer to our documentation.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🤝 Contributing
+We welcome contributions from the community! Please check out our Contributing Guidelines for more information on how to get started.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Learn More
+🙏 Acknowledgements
+Monaco Editor
 
-To learn more about Next.js, take a look at the following resources:
+Highlight.js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+React Icons
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Made with ❤️ by Tanishq Kapoor
