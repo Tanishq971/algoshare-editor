@@ -6,9 +6,10 @@ import { Editor } from "@monaco-editor/react";
 import { LANGUAGE_CONFIG } from "@/constants";
 import { Monaco } from "@monaco-editor/react";
 import { defineMonacoThemes } from "@/constants";
+import { Fontdiner_Swanky } from "next/font/google";
 
 function EditorPanel() {
-  const { language, theme, editor, setEditor } = useCodeEditorStore();
+  const { language, theme, editor, setEditor,fontSize } = useCodeEditorStore();
 
   useEffect(() => {
     const newCode =  LANGUAGE_CONFIG[language].defaultCode
@@ -22,7 +23,6 @@ function EditorPanel() {
   const handleEditorChange = (value: string | undefined) => {
     if (value) localStorage.setItem(`editor-code-${language}`, value);
   };
-
   return (
     <div className="relative">
       <div className="relative bg-[#12121a]/90 backdrop-blur rounded-xl border border-white/[0.05] p-6">
@@ -37,7 +37,7 @@ function EditorPanel() {
             onMount={(editor) => setEditor(editor as any)}
             options={{
               minimap: { enabled: false },
-              fontSize:15,
+              fontSize:fontSize,
               automaticLayout: true,
               scrollBeyondLastLine: false,
               padding: { top: 16, bottom: 16 },

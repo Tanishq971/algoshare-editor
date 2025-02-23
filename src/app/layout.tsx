@@ -50,7 +50,4 @@ export default function RootLayout({
       </html>
     </ConvexClientProvider>
   );
-  // shscjksblksbcisbjcls
-  // jsdbcjsbv;lsakbnc;askc
-  /// xc nsdljb jb ldj nd bdl
 }
