@@ -52,7 +52,7 @@ print("Hello from Python")`,
   
       System.out.println("Hello from Java");
   
-
+  }
 }`,
   },
   go: {

@@ -1,9 +1,9 @@
 "use client";
 
 import { useCodeEditorStore } from "@/store/editorStore";
-import { Loader2 } from "lucide-react";
+import { Loader2, Plus , Minus} from "lucide-react";
 export default function OutputPanel() {
-  const {customInput , setCustomInput , runCode , error , output , isRunning} = useCodeEditorStore()
+  const {customInput , setCustomInput , runCode , error , output , isRunning, fontSize, setFontSize} = useCodeEditorStore()
    
   function runCodeHandler(){
       runCode()
@@ -12,7 +12,19 @@ export default function OutputPanel() {
   return (
     <div className="relative bg-[#12121a]/90 backdrop-blur rounded-xl border border-white/[0.05] p-6">
       <div className="flex flex-col space-y-4">
-        <div className="flex justify-end">
+        <div className="flex justify-between">
+          <div className="flex w-30 gap-3">
+            <button className=" bg-blue-950 p-2 rounded-full" onClick={()=>{
+              setFontSize(fontSize+1)
+            }}>
+            <Plus></Plus>
+            </button>
+            <button className="bg-blue-400 p-2 rounded-full" onClick={()=>{
+              setFontSize(fontSize-1)
+            }}><Minus></Minus></button>
+            
+            
+          </div>
           <button
             onClick={runCodeHandler}
             className="px-4 py-2 w-32 gap-2 hover:bg-blue-900 flex item-center justify-center text-white rounded-md font-light transition-colors  bg-gradient-to-r from-blue-800 to-green-900"

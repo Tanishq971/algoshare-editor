@@ -57,9 +57,9 @@ export const useCodeEditorStore = create<CodeEditorState>((set, get) => {
       set({ theme });
     },
 
-    setFontSize: (fontSize: number) => {
-      localStorage.setItem(`editor-font-size`, fontSize.toString());
-      set({ fontSize });
+    setFontSize: (Size: number) => {
+      localStorage.setItem(`editor-font-size`, Size.toString());
+      set({ fontSize:Size });
     },
 
     setLanguage: (language: string) => {
